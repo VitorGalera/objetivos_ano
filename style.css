@@ -1,9 +1,9 @@
 :root{
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
+    --cor-de-fundo: #080808;
+    --amarelo: hsl(69, 100%, 73%);
     --branco: #FFFFFF;
-    --botao-ativo: #2f2974;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --botao-ativo: #8479ff;
+    --botao-inativo: #06004d80;
     --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
@@ -54,4 +54,19 @@ body{
 .ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
+}
+
+.aba-conteudo {
+    font-family: 'roboto    ', Courier, monospace;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
