@@ -4,9 +4,9 @@
 
 :root{
     --cor-de-fundo:#1E1E1E;
-    --verde:#6FFF57;
+    --verde:#8d00ce;
     --branco:#FFFFFF;
-    --botao-ativo:#3A375E;
+    --botao-ativo:#514364;
     --botao-inativo:rgba(58,55,94,0.5);
     --texto-fundo:regba(58,55,94,0.3);
    
@@ -14,7 +14,7 @@
     body{
     background-color:var(--cor-de-fundo);
     color:var(--branco);
-    font-family:'Chakra Petch', sans-serif;
+    font-family:'Chakra Petch', sans-serif;         
     }
    
     .conteudo-principal{
@@ -58,7 +58,7 @@
        .botao:first-child{
        border-radius:40px 40px 0 0 ;
        }
-        .botoes{
+        .botoes.ativo{
             display:block;
         }
 
@@ -66,38 +66,30 @@
             background-color:var(--botao-ativo);
             Border-bottom: 4px solid var(--verde);
         }
-.aba-conteudo {
-    font-family: 'roboto    ', Courier, monospace;
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
+.aba-conteudo.ativo {
+    display: block;
 }
 
+.aba-conteudo{
+    display: none;  
+}
 
 .abas-textos {
      background-color: var(--texto-fundo);
      padding: 40px;
 }
 
-    .aba-titulo-principal{
-        font-size: 28px;
-        text-align: center;
-    }
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center; 
+}
 
-    .aba-conteudo-titulo-secundario{
-        text-align: center;
-        color: var(--verde);
-        text-transform: uppercase;
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
        
-    }
+}
 
    
 @media screen and (min-width:768px) {
